@@ -1,0 +1,31 @@
+.header{
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    span{
+        font-weight: 700;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    nav{
+        .nav-link{
+            margin: 0 10px;
+            color: black;
+            text-decoration: none; 
+            transition: all 0.25s;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .nav-link.active{
+            border-bottom: 1px solid black;
+        }
+        .nav-link:hover{
+            color: grey;
+            border-color: grey;
+        }
+    }
+}
